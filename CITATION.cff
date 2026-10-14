@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "github-social-preview-ai: AI GitHub social preview / OG image generator (Agent Skill)"
+type: software
+authors:
+  - alias: liush2yuxjtu
+repository-code: "https://github.com/liush2yuxjtu/github-social-preview-ai"
+url: "https://github.com/liush2yuxjtu/github-social-preview-ai"
+license: MIT
+date-released: "2026-10-15"
+keywords: [agent-skills, claude-code, github-social-preview, og-image, open-graph, cover-image, ai-image-generation]
