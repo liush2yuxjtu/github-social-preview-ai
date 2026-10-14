@@ -1,0 +1,81 @@
+{
+ "png": "/workspace/skills/github-social-preview-ai/examples/out/douyin-video-skill.png",
+ "html": "/workspace/skills/github-social-preview-ai/examples/out/douyin-video-skill.png.html",
+ "pass": true,
+ "fails": [],
+ "warnings": [],
+ "checks": {
+  "size": {
+   "ok": true,
+   "msg": "image is 1280x640, need 1280x640"
+  },
+  "max_text_layers": {
+   "ok": true,
+   "msg": "2 text elements (max 2): 爆款选题\n四问打分 | douyin-video-skill"
+  },
+  "thumb_320": {
+   "ok": true,
+   "msg": "text too small at 320px (min 11px): "
+  },
+  "card_506": {
+   "ok": true,
+   "msg": "text too small at 506px card (min 16px): "
+  },
+  "safe_area": {
+   "ok": true,
+   "msg": "text outside 40px safe margin: "
+  },
+  "art_overlap": {
+   "ok": true,
+   "msg": "text overlaps art: "
+  },
+  "contrast": {
+   "ok": true,
+   "msg": "contrast below 4.5: "
+  },
+  "ocr_text": "爆款选是\n四问打分\ndouvinevideo skal\n\n爆款\n\nRize es\n\n四问打分\n\ndouyin-video-skill",
+  "ocr": {
+   "ok": true,
+   "msg": "headline \"爆款选题四问打分\" recognised 88% on 320px thumb (min 60%)"
+  }
+ },
+ "text_elements": [
+  {
+   "text": "爆款选题\n四问打分",
+   "tag": "div",
+   "cls": "h",
+   "font_size": 118,
+   "font_family": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+   "color": "rgb(255, 255, 255)",
+   "box": [
+    72,
+    106.84375,
+    544.015625,
+    410
+   ],
+   "px_at_320": 29.5,
+   "px_at_506": 46.6,
+   "art_frac": 0.0,
+   "contrast": 20.02
+  },
+  {
+   "text": "douyin-video-skill",
+   "tag": "div",
+   "cls": "n",
+   "font_size": 50,
+   "font_family": "\"JetBrains Mono\", \"DejaVu Sans Mono\", Menlo, monospace",
+   "color": "rgb(255, 255, 255)",
+   "box": [
+    72,
+    452.15625,
+    612,
+    518.15625
+   ],
+   "px_at_320": 12.5,
+   "px_at_506": 19.8,
+   "art_frac": 0.0,
+   "contrast": 20.02
+  }
+ ],
+ "sheet": "/workspace/skills/github-social-preview-ai/examples/out/douyin-video-skill.sheet.png"
+}

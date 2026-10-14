@@ -1,0 +1,81 @@
+{
+ "png": "/workspace/skills/github-social-preview-ai/examples/out/douyin-read-skill.png",
+ "html": "/workspace/skills/github-social-preview-ai/examples/out/douyin-read-skill.png.html",
+ "pass": true,
+ "fails": [],
+ "warnings": [],
+ "checks": {
+  "size": {
+   "ok": true,
+   "msg": "image is 1280x640, need 1280x640"
+  },
+  "max_text_layers": {
+   "ok": true,
+   "msg": "2 text elements (max 2): 读懂任意\n一条抖音视频 | douyin-read-skill"
+  },
+  "thumb_320": {
+   "ok": true,
+   "msg": "text too small at 320px (min 11px): "
+  },
+  "card_506": {
+   "ok": true,
+   "msg": "text too small at 506px card (min 16px): "
+  },
+  "safe_area": {
+   "ok": true,
+   "msg": "text outside 40px safe margin: "
+  },
+  "art_overlap": {
+   "ok": true,
+   "msg": "text overlaps art: "
+  },
+  "contrast": {
+   "ok": true,
+   "msg": "contrast below 4.5: "
+  },
+  "ocr_text": "读懂任意\n一条拌音视频\ndouvyin-read-skill\n\n读懂任意\n\n一条拌音视频\n\ndouvyin-read-skill",
+  "ocr": {
+   "ok": true,
+   "msg": "headline \"读懂任意一条抖音视频\" recognised 90% on 320px thumb (min 60%)"
+  }
+ },
+ "text_elements": [
+  {
+   "text": "读懂任意\n一条抖音视频",
+   "tag": "div",
+   "cls": "h",
+   "font_size": 92,
+   "font_family": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+   "color": "rgb(255, 255, 255)",
+   "box": [
+    72,
+    140.96875,
+    624.015625,
+    377
+   ],
+   "px_at_320": 23.0,
+   "px_at_506": 36.4,
+   "art_frac": 0.0,
+   "contrast": 20.02
+  },
+  {
+   "text": "douyin-read-skill",
+   "tag": "div",
+   "cls": "n",
+   "font_size": 50,
+   "font_family": "\"JetBrains Mono\", \"DejaVu Sans Mono\", Menlo, monospace",
+   "color": "rgb(255, 255, 255)",
+   "box": [
+    72,
+    423.03125,
+    582,
+    489.03125
+   ],
+   "px_at_320": 12.5,
+   "px_at_506": 19.8,
+   "art_frac": 0.0,
+   "contrast": 20.02
+  }
+ ],
+ "sheet": "/workspace/skills/github-social-preview-ai/examples/out/douyin-read-skill.sheet.png"
+}

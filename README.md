@@ -28,7 +28,8 @@ Requirements: Python 3 + Pillow, Google Chrome / Chromium, a CJK font (e.g. Noto
 ### Usage
 Ask your agent: *"Make a GitHub social preview for this repo"*. Or run directly:
 ```sh
-python3 scripts/render.py examples/covers.json --out-dir out
+python3 scripts/render.py examples/covers.json --out-dir out   # renders + verifies, exit 1 on FAIL
+python3 scripts/verify.py out/my-repo.png                      # verify a single cover
 ```
 ```json
 {"defaults": {"art_shift": 60, "accent": ["#25f4ee", "#fe2c55"]},
@@ -45,6 +46,13 @@ Then upload in **Settings → General → Social preview**.
 - **最多两层文字**：大标题 + 仓库名，缩到 **320×160** 依然清晰（自动输出缩略图供检查）。
 - 左侧预留干净文字区 + 渐变遮罩，文字不压图。
 - 一份 `covers.json` 批量出图。
+- **自动校验**（`scripts/verify.py`，每次渲染后自动运行）：文字层 >2、320px 缩略图下字号 <11px / 506px 卡片下 <16px、越出 40px 安全边距、压到插画、对比度 <4.5、缩略图 OCR 认不出标题——任何一项都会失败并给出原因，同时输出报告 JSON 和对比图（原图 | 506 | 320）。
+
+### Verifier in action / 校验示例
+Passing cover / 通过：
+![pass sheet](examples/out/douyin-read-skill.sheet.png)
+An earlier cluttered draft — rejected automatically / 早期杂乱版本被自动拒绝（[full output](examples/fail-demo/verify-output.txt)）：
+![fail sheet](examples/fail-demo/cluttered-v1.sheet.png)
 
 ### 安装
 同上 `git clone` 到 `~/.claude/skills/`（或 `.agents/skills/`、`.cursor/skills/`），或 `npx skills add liush2yuxjtu/github-social-preview-ai`。依赖：Python 3 + Pillow、Chrome/Chromium、中文字体（如 Noto Sans CJK）。

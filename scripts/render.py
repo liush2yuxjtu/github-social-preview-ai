@@ -2,8 +2,8 @@
 """github-social-preview-ai renderer.
 
 Composes crisp text (max 2 layers: headline + repo name) over a text-free AI
-background using HTML + headless Chrome, then writes a 320x160 thumbnail for
-readability review.
+background using HTML + headless Chrome, then writes a 320x160 thumbnail and runs scripts/verify.py on every cover
+(exit 1 if any cover fails).
 
 Usage:
   python3 scripts/render.py examples/covers.json [--out-dir DIR] [--chrome PATH]
@@ -47,9 +47,12 @@ def find_chrome(p):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("config"); ap.add_argument("--out-dir"); ap.add_argument("--chrome")
+    ap.add_argument("--no-verify", action="store_true", help="skip scripts/verify.py (not allowed before handing results to a user)")
+    ap.add_argument("--verify-args", default="", help="extra args passed to verify.py, e.g. \"--min-thumb-px 12\"")
     a = ap.parse_args(); cfg_path = os.path.abspath(a.config); base = os.path.dirname(cfg_path)
     cfg = json.load(open(cfg_path)); chrome = find_chrome(a.chrome)
     out_dir = os.path.abspath(a.out_dir or os.path.join(base, "out")); os.makedirs(out_dir, exist_ok=True)
+    failed = []
     covers = cfg["covers"] if isinstance(cfg, dict) else cfg
     for c in covers:
         o = {**DEF, **(cfg.get("defaults", {}) if isinstance(cfg, dict) else {}), **c}
@@ -70,5 +73,11 @@ def main():
         im = Image.open(out).convert("RGB").crop((0, 0, W, H)); im.save(out)
         im.resize((320, 160), Image.LANCZOS).save(out[:-4] + ".thumb.png")
         print(f"{out} {im.size} headline={size}px")
+        if not a.no_verify:
+            r = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "verify.py"), out,
+                "--html", hp, "--headline", "".join(lines), "--width", str(W), "--height", str(H), *a.verify_args.split()])
+            if r.returncode: failed.append(o["out"])
+    if failed:
+        sys.exit(f"VERIFY FAILED for: {', '.join(failed)} -- fix config and re-render; do NOT hand these to the user")
 
 if __name__ == "__main__": main()

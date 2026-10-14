@@ -1,0 +1,8 @@
+FAIL /workspace/skills/github-social-preview-ai/examples/fail-demo/cluttered-v1.png
+  FAIL max_text_layers: 9 text elements (max 2): AGENT SKILL · CLAUDE CODE | douyin-video-skill | 爆款选题 · 四问打分 | Viral topic picking for short  | Douyin | TikTok | 小红书 | v0.1.0 | github.com/liush2yuxjtu/douyin
+  FAIL thumb_320: text too small at 320px (min 11px): "AGENT SKILL · CLAUDE COD" 18px→4.5px; "爆款选题 · 四问打分" 38px→9.5px; "Viral topic picking for " 22px→5.5px; "Douyin" 17px→4.2px; "TikTok" 17px→4.2px; "小红书" 17px→4.2px; "v0.1.0" 17px→4.2px; "github.com/liush2yuxjtu/" 16px→4.0px
+  FAIL card_506: text too small at 506px card (min 16px): "AGENT SKILL · CLAUDE COD" 18px→7.1px; "爆款选题 · 四问打分" 38px→15.0px; "Viral topic picking for " 22px→8.7px; "Douyin" 17px→6.7px; "TikTok" 17px→6.7px; "小红书" 17px→6.7px; "v0.1.0" 17px→6.7px; "github.com/liush2yuxjtu/" 16px→6.3px
+  FAIL safe_area: text outside 40px safe margin: "github.com/liush2yuxjtu/" box=[72, 584, 395, 604]
+  FAIL contrast: contrast below 4.5: "github.com/liush2yuxjtu/" 2.8:1
+  report: /workspace/skills/github-social-preview-ai/examples/fail-demo/cluttered-v1.verify.json | sheet: /workspace/skills/github-social-preview-ai/examples/fail-demo/cluttered-v1.sheet.png  <- view it
+exit code: 1

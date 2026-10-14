@@ -1,0 +1,213 @@
+{
+ "png": "/workspace/skills/github-social-preview-ai/examples/fail-demo/cluttered-v1.png",
+ "html": "/workspace/skills/github-social-preview-ai/examples/fail-demo/cluttered-v1.png.html",
+ "pass": false,
+ "fails": [
+  "max_text_layers: 9 text elements (max 2): AGENT SKILL · CLAUDE CODE | douyin-video-skill | 爆款选题 · 四问打分 | Viral topic picking for short  | Douyin | TikTok | 小红书 | v0.1.0 | github.com/liush2yuxjtu/douyin",
+  "thumb_320: text too small at 320px (min 11px): \"AGENT SKILL · CLAUDE COD\" 18px→4.5px; \"爆款选题 · 四问打分\" 38px→9.5px; \"Viral topic picking for \" 22px→5.5px; \"Douyin\" 17px→4.2px; \"TikTok\" 17px→4.2px; \"小红书\" 17px→4.2px; \"v0.1.0\" 17px→4.2px; \"github.com/liush2yuxjtu/\" 16px→4.0px",
+  "card_506: text too small at 506px card (min 16px): \"AGENT SKILL · CLAUDE COD\" 18px→7.1px; \"爆款选题 · 四问打分\" 38px→15.0px; \"Viral topic picking for \" 22px→8.7px; \"Douyin\" 17px→6.7px; \"TikTok\" 17px→6.7px; \"小红书\" 17px→6.7px; \"v0.1.0\" 17px→6.7px; \"github.com/liush2yuxjtu/\" 16px→6.3px",
+  "safe_area: text outside 40px safe margin: \"github.com/liush2yuxjtu/\" box=[72, 584, 395, 604]",
+  "contrast: contrast below 4.5: \"github.com/liush2yuxjtu/\" 2.8:1"
+ ],
+ "warnings": [],
+ "checks": {
+  "size": {
+   "ok": true,
+   "msg": "image is 1280x640, need 1280x640"
+  },
+  "max_text_layers": {
+   "ok": false,
+   "msg": "9 text elements (max 2): AGENT SKILL · CLAUDE CODE | douyin-video-skill | 爆款选题 · 四问打分 | Viral topic picking for short  | Douyin | TikTok | 小红书 | v0.1.0 | github.com/liush2yuxjtu/douyin"
+  },
+  "thumb_320": {
+   "ok": false,
+   "msg": "text too small at 320px (min 11px): \"AGENT SKILL · CLAUDE COD\" 18px→4.5px; \"爆款选题 · 四问打分\" 38px→9.5px; \"Viral topic picking for \" 22px→5.5px; \"Douyin\" 17px→4.2px; \"TikTok\" 17px→4.2px; \"小红书\" 17px→4.2px; \"v0.1.0\" 17px→4.2px; \"github.com/liush2yuxjtu/\" 16px→4.0px"
+  },
+  "card_506": {
+   "ok": false,
+   "msg": "text too small at 506px card (min 16px): \"AGENT SKILL · CLAUDE COD\" 18px→7.1px; \"爆款选题 · 四问打分\" 38px→15.0px; \"Viral topic picking for \" 22px→8.7px; \"Douyin\" 17px→6.7px; \"TikTok\" 17px→6.7px; \"小红书\" 17px→6.7px; \"v0.1.0\" 17px→6.7px; \"github.com/liush2yuxjtu/\" 16px→6.3px"
+  },
+  "safe_area": {
+   "ok": false,
+   "msg": "text outside 40px safe margin: \"github.com/liush2yuxjtu/\" box=[72, 584, 395, 604]"
+  },
+  "art_overlap": {
+   "ok": true,
+   "msg": "text overlaps art: "
+  },
+  "contrast": {
+   "ok": false,
+   "msg": "contrast below 4.5: \"github.com/liush2yuxjtu/\" 2.8:1"
+  },
+  "ocr_text": "douyin-video-skill\n爆款选题 四问打分\nCowm     Ta Tom     eae     vaio\n\nAotnt\n\n4\n\nc.avor\n\noor\n\ndouyin-video-skill\n\n人\n\nCowym\n\nTa Tou\n\nae\n\nvaio",
+  "ocr": {
+   "ok": true,
+   "msg": "headline \"douyin-video-skill\" recognised 100% on 320px thumb (min 60%)"
+  }
+ },
+ "text_elements": [
+  {
+   "text": "AGENT SKILL · CLAUDE CODE",
+   "tag": "div",
+   "cls": "eyebrow",
+   "font_size": 18,
+   "font_family": "Inter, \"Noto Sans CJK SC\", \"Noto Serif CJK SC\", sans-serif",
+   "color": "rgb(37, 244, 238)",
+   "box": [
+    72,
+    180,
+    431.21875,
+    201
+   ],
+   "px_at_320": 4.5,
+   "px_at_506": 7.1,
+   "art_frac": 0.0,
+   "contrast": 13.67
+  },
+  {
+   "text": "douyin-video-skill",
+   "tag": "h1",
+   "cls": "",
+   "font_size": 55,
+   "font_family": "Inter, \"Noto Sans CJK SC\", \"Noto Serif CJK SC\", sans-serif",
+   "color": "rgba(0, 0, 0, 0)",
+   "box": [
+    72,
+    213,
+    555.046875,
+    279
+   ],
+   "px_at_320": 13.8,
+   "px_at_506": 21.7,
+   "art_frac": 0.0,
+   "contrast": 19.93
+  },
+  {
+   "text": "爆款选题 · 四问打分",
+   "tag": "div",
+   "cls": "tag",
+   "font_size": 38,
+   "font_family": "Inter, \"Noto Sans CJK SC\", \"Noto Serif CJK SC\", sans-serif",
+   "color": "rgb(255, 255, 255)",
+   "box": [
+    72,
+    299,
+    406.703125,
+    345
+   ],
+   "px_at_320": 9.5,
+   "px_at_506": 15.0,
+   "art_frac": 0.0,
+   "contrast": 20.12
+  },
+  {
+   "text": "Viral topic picking for short videos",
+   "tag": "div",
+   "cls": "sub",
+   "font_size": 22,
+   "font_family": "Inter, \"Noto Sans CJK SC\", \"Noto Serif CJK SC\", sans-serif",
+   "color": "rgba(255, 255, 255, 0.7)",
+   "box": [
+    72,
+    365,
+    427.609375,
+    391
+   ],
+   "px_at_320": 5.5,
+   "px_at_506": 8.7,
+   "art_frac": 0.0,
+   "contrast": 6.82
+  },
+  {
+   "text": "Douyin",
+   "tag": "span",
+   "cls": "chip",
+   "font_size": 17,
+   "font_family": "Inter, \"Noto Sans CJK SC\", \"Noto Serif CJK SC\", sans-serif",
+   "color": "rgb(255, 255, 255)",
+   "box": [
+    89,
+    427,
+    145.234375,
+    447
+   ],
+   "px_at_320": 4.2,
+   "px_at_506": 6.7,
+   "art_frac": 0.0,
+   "contrast": 9.7
+  },
+  {
+   "text": "TikTok",
+   "tag": "span",
+   "cls": "chip",
+   "font_size": 17,
+   "font_family": "Inter, \"Noto Sans CJK SC\", \"Noto Serif CJK SC\", sans-serif",
+   "color": "rgb(255, 255, 255)",
+   "box": [
+    189.234375,
+    427,
+    241.875,
+    447
+   ],
+   "px_at_320": 4.2,
+   "px_at_506": 6.7,
+   "art_frac": 0.0,
+   "contrast": 9.11
+  },
+  {
+   "text": "小红书",
+   "tag": "span",
+   "cls": "chip",
+   "font_size": 17,
+   "font_family": "Inter, \"Noto Sans CJK SC\", \"Noto Serif CJK SC\", sans-serif",
+   "color": "rgb(255, 255, 255)",
+   "box": [
+    285.875,
+    431,
+    336.875,
+    451
+   ],
+   "px_at_320": 4.2,
+   "px_at_506": 6.7,
+   "art_frac": 0.0,
+   "contrast": 5.51
+  },
+  {
+   "text": "v0.1.0",
+   "tag": "span",
+   "cls": "chip",
+   "font_size": 17,
+   "font_family": "Inter, \"Noto Sans CJK SC\", \"Noto Serif CJK SC\", sans-serif",
+   "color": "rgb(255, 255, 255)",
+   "box": [
+    380.875,
+    427,
+    426.265625,
+    447
+   ],
+   "px_at_320": 4.2,
+   "px_at_506": 6.7,
+   "art_frac": 0.0,
+   "contrast": 9.6
+  },
+  {
+   "text": "github.com/liush2yuxjtu/douyin-video-skill",
+   "tag": "div",
+   "cls": "foot",
+   "font_size": 16,
+   "font_family": "Inter, \"Noto Sans CJK SC\", \"Noto Serif CJK SC\", sans-serif",
+   "color": "rgba(255, 255, 255, 0.45)",
+   "box": [
+    72,
+    584,
+    394.953125,
+    604
+   ],
+   "px_at_320": 4.0,
+   "px_at_506": 6.3,
+   "art_frac": 0.0,
+   "contrast": 2.8
+  }
+ ],
+ "sheet": "/workspace/skills/github-social-preview-ai/examples/fail-demo/cluttered-v1.sheet.png"
+}
