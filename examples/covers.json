@@ -1,0 +1,7 @@
+{
+  "defaults": {"width": 1280, "height": 640, "art_shift": 60, "accent": ["#25f4ee", "#fe2c55"], "bg_color": "#07080c"},
+  "covers": [
+    {"out": "douyin-video-skill.png", "bg": "bg/douyin-video.jpg", "headline": ["爆款选题", "四问打分"], "title": "douyin-video-skill", "headline_size": 118},
+    {"out": "douyin-read-skill.png", "bg": "bg/douyin-read.jpg", "headline": ["读懂任意", "一条抖音视频"], "title": "douyin-read-skill", "headline_size": 92}
+  ]
+}
